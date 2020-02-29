@@ -579,9 +579,10 @@ std::map<std::string, ThemeSet> ThemeData::getThemeSets()
 {
 	std::map<std::string, ThemeSet> sets;
 
-	static const size_t pathCount = 2;
+	static const size_t pathCount = 3;
 	std::string paths[pathCount] =
 	{
+		"/usr/share/emulationstation/themes",
 		"/etc/emulationstation/themes",
 		Utils::FileSystem::getHomePath() + "/.emulationstation/themes"
 	};
